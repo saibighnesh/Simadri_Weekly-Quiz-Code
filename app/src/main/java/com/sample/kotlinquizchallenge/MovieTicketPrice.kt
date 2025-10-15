@@ -15,10 +15,6 @@ package com.sample.kotlinquizchallenge
 *
 * */
 fun calculateTicketPrice(age: Int, isMatinee: Boolean): Int? {
-    if (age !in 0..120) {
-        println("Error: Age must be between 0 and 120.")
-        return null
-    }
     return when {
         age < 13 -> 8
         age >= 65 && isMatinee -> 8
